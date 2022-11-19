@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Austin Roses</title>
+    <style>
+      body {
+        margin: 60px auto;
+        background: no-repeat linear-gradient(rgb(28, 36, 30), rgb(3 39 13));
+      }
+      h1 {
+        text-align: center;
+        color: rgba(252, 228, 167, 0.8);
+      }
+      span {
+        text-transform: capitalize;
+      }
+      h2 {
+        text-align: center;
+        color: rgba(252, 228, 167, 0.8);
+      }
+      p {
+        text-align: center;
+        color: rgb(255 227 204);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+        width: 40%;
+        margin: 0 auto;
+      }
+      div {
+        margin: 60px auto;
+      }
+      img {
+        display: block;
+        max-width: 40%;
+        margin: 50px auto 30px auto;
+      }
+      button {
+        display: block;
+        border: 1px solid rgba(252, 228, 167, 0.8);
+        background: transparent;
+        color: rgba(252, 228, 167, 0.8);
+        padding: 20px 30px;
+        margin: 50px auto;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        box-shadow: 1px 1px 5px 5px rgb(252 228 167 / 10%);
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgba(252, 228, 167, 0.8);
+        color: rgb(28, 36, 30);
+        font-weight: 500;
+        box-shadow: 1px 1px 10px 10px rgb(17 32 21);
+      }
+      a {
+        color: rgba(252, 228, 167, 0.8);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      I love <br />
+      <span>David Austin</span> roses
+    </h1>
+    <p>There are such varieties in my collection</p>
+    <div>
+      <h2>Lady of Shalott</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/882/original/lady-of-shalott-1.jpg?1664137098"
+        alt="Lady of Shalott rose"
+      />
+      <p>
+        <em>
+          Rich orange-red buds open to chalice-shaped blooms, filled with
+          loosely arranged, orange petals. The surrounding outer petals are
+          salmon-pink with beautifully contrasting golden-yellow undersides
+        </em>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2>Wildeve</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/880/original/wildeve.jpg?1664137003"
+        alt="Wildeve rose"
+      />
+      <p>
+        <em>
+          Distinctly quartered, rosette blooms are produced on long arching
+          branches. They are light pink with a pretty apricot hue, the outer
+          petals paling to almost white. It forms a bushy, mounding shrub.
+        </em>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2>Pilgrim</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/881/original/pilgrim.jpg?1664137051"
+        alt="Pilgrim rose"
+      />
+      <p>
+        <em>
+          This variety has particularly beautiful blooms. The buds open to
+          reveal many petalled cups, which gradually form large, flat rosettes.
+          The color is a very attractive shade of soft yellow, the petals paling
+          prettily towards the edges.
+        </em>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2>Charles Darwin</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/883/original/charles_darwin.jpg?1664137140"
+        alt="Charles Darwin rose"
+      />
+      <p>
+        <em>
+          The flowers are very full and rounded at first, later opening up to
+          shallow cups. They are yellow in color, tending almost towards
+          mustard, and have a strong, delicious fragrance, varying between soft
+          floral Tea and pure lemon.
+        </em>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2>Shropshire Lad</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/884/original/A-Shropshire-Lad-2.jpg?1664137162"
+        alt="Shropshire Lad rose"
+      />
+      <p>
+        <em>
+          Large, cupped, light peach-pink rosettes, with a fruity Tea scent.
+          Vigorous, with plentiful dark green foliage.
+        </em>
+      </p>
+    </div>
+    <p>
+      Read and learn more about
+      <a href="https://www.davidaustinroses.com">David Austin roses</a>
+    </p>
+    <button type="button">Buy bouquet</button>
+    <footer>
+      <p>This page was built by <strong>Daria</strong></p>
+    </footer>
+    <script>
+      const btn = document.querySelector("button");
+      function buyRoses() {
+        let firstName = prompt("What is your name?").trim().toLocaleLowerCase();
+        let lastName = prompt("What is surname?").trim().toLocaleLowerCase();
+        let phone = prompt("What is your telephone number?")
+          .trim()
+          .toLocaleLowerCase();
+        if (firstName.length > 0 && lastName.length > 0 && phone.length > 0) {
+          alert(
+            `Thank you for your order! We'll contact you by phone ${phone} as soon as possible`
+          );
+        }
+      }
+      btn.addEventListener("click", buyRoses);
+    </script>
+  </body>
+</html>
